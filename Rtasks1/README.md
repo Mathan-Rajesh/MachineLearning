@@ -94,49 +94,6 @@ The following visualizations were created:
 
 ---
 
-## 📷 Project Output
-
-### Customer Churn Distribution
-
-![Customer Churn](images/class_distribution.png)
-
----
-
-### Correlation Heatmap
-
-![Heatmap](images/correlation_heatmap.png)
-
----
-
-### Confusion Matrix
-
-![Confusion Matrix](images/confusion_matrix.png)
-
----
-
-### Feature Importance
-
-![Feature Importance](images/feature_importance.png)
-
----
-
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
----
-
-### Balance Distribution
-
-![Balance Distribution](images/balance_distribution.png)
-
----
-
-### Churn by Gender
-
-![Gender Churn](images/gender_churn.png)
-
----
 
 ## 📈 Model Performance
 
