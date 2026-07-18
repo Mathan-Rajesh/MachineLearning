@@ -1,41 +1,35 @@
-# 🏦 Customer Churn Prediction using Machine Learning
-
-> A Machine Learning project to predict whether a bank customer will leave the bank (Churn) or continue using its services based on customer information.
-
----
+# Bank Customer Churn Prediction using Machine Learning
 
 ## 📌 Project Overview
-
-Customer churn prediction is an important problem in the banking industry. This project uses Machine Learning to analyze customer data and predict whether a customer is likely to leave the bank.
-
-The model is trained using customer details such as credit score, age, balance, salary, number of products, and account activity.
+This project predicts whether a bank customer is likely to leave the bank (churn) using Machine Learning. The model is trained on customer information such as credit score, age, balance, gender, country, and other banking details.
 
 ---
 
 ## 🎯 Objective
-
-- Predict customer churn using Machine Learning.
-- Identify customers who are likely to leave the bank.
-- Help banks improve customer retention strategies.
+To build a machine learning model that accurately predicts customer churn so banks can identify customers who are at risk of leaving and improve customer retention.
 
 ---
 
-## 📂 Dataset Information
+## 📂 Dataset
+**Dataset:** Bank Customer Churn Prediction
 
-| Feature | Description |
-|----------|-------------|
-| customer_id | Unique customer ID |
-| credit_score | Customer credit score |
-| country | Customer's country |
-| gender | Male / Female |
-| age | Customer age |
-| tenure | Years with the bank |
-| balance | Account balance |
-| products_number | Number of bank products |
-| credit_card | Has credit card (0/1) |
-| active_member | Active member (0/1) |
-| estimated_salary | Estimated annual salary |
-| churn | Target variable (0 = Stay, 1 = Leave) |
+### Features
+- Customer ID
+- Credit Score
+- Country
+- Gender
+- Age
+- Tenure
+- Balance
+- Products Number
+- Credit Card Status
+- Active Member
+- Estimated Salary
+
+### Target Variable
+- **Churn**
+  - 0 → Customer Stays
+  - 1 → Customer Leaves
 
 ---
 
@@ -47,182 +41,108 @@ The model is trained using customer details such as credit score, age, balance, 
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Jupyter Notebook
 
 ---
 
-## 🤖 Machine Learning Workflow
+## 📚 Machine Learning Workflow
 
-```
-Dataset
-   │
-   ▼
-Data Preprocessing
-   │
-   ▼
-Label Encoding
-   │
-   ▼
-Feature Scaling
-   │
-   ▼
-Train-Test Split
-   │
-   ▼
-Random Forest Classifier
-   │
-   ▼
-Prediction
-   │
-   ▼
-Model Evaluation
-```
+1. Import required libraries
+2. Load the dataset
+3. Perform Exploratory Data Analysis (EDA)
+4. Handle categorical variables using Label Encoding
+5. Remove unnecessary columns
+6. Split data into training and testing sets
+7. Scale features using StandardScaler
+8. Train the Random Forest Classifier
+9. Predict customer churn
+10. Evaluate model performance
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## 🤖 Machine Learning Model
 
-The following visualizations were created:
-
-- 📈 Customer Churn Distribution
-- 🔥 Correlation Heatmap
-- 👥 Churn by Gender
-- 📊 Age Distribution
-- 💰 Balance Distribution
-- ⭐ Feature Importance
-- 📉 Confusion Matrix
+**Algorithm Used**
+- Random Forest Classifier
 
 ---
 
-## 📷 Project Output
+## 📊 Data Visualization
 
-### Customer Churn Distribution
+The project includes:
 
-![Customer Churn](images/class_distribution.png)
-
----
-
-### Correlation Heatmap
-
-![Heatmap](images/correlation_heatmap.png)
+- Customer Churn Distribution
+- Correlation Heatmap
 
 ---
 
-### Confusion Matrix
+## 📈 Model Evaluation
 
-![Confusion Matrix](images/confusion_matrix.png)
+The model is evaluated using:
 
----
-
-### Feature Importance
-
-![Feature Importance](images/feature_importance.png)
-
----
-
-### Age Distribution
-
-![Age Distribution](images/age_distribution.png)
-
----
-
-### Balance Distribution
-
-![Balance Distribution](images/balance_distribution.png)
-
----
-
-### Churn by Gender
-
-![Gender Churn](images/gender_churn.png)
-
----
-
-## 📈 Model Performance
-
-| Metric | Value |
-|---------|--------|
-| Algorithm | Random Forest Classifier |
-| Problem Type | Binary Classification |
-| Accuracy | **86%** (Approx.) |
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
 
 ---
 
 ## 📁 Project Structure
 
 ```
-Customer-Churn-Prediction/
+Bank-Customer-Churn-Prediction/
 │
-├── Churn_Modelling.csv
-├── Customer_Churn_Prediction.ipynb
+├── Bank Customer Churn Prediction.csv
+├── churn_prediction.ipynb
+├── class_distribution.png
+├── correlation_heatmap.png
 ├── README.md
-│
-├── images/
-│   ├── class_distribution.png
-│   ├── correlation_heatmap.png
-│   ├── confusion_matrix.png
-│   ├── feature_importance.png
-│   ├── age_distribution.png
-│   ├── balance_distribution.png
-│   └── gender_churn.png
-│
-└── requirements.txt
 ```
 
 ---
 
-## ▶️ Installation
+## 🚀 How to Run
 
-Clone the repository
+1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Customer-Churn-Prediction.git
+git clone https://github.com/yourusername/Bank-Customer-Churn-Prediction.git
 ```
 
-Install required libraries
+2. Install required libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-Run the notebook
+3. Open the notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open
-
-```
-Customer_Churn_Prediction.ipynb
-```
-
-Run all cells.
+4. Run all cells.
 
 ---
 
-## 📌 Future Enhancements
+## 📌 Future Improvements
 
 - Hyperparameter Tuning
-- XGBoost Classifier
-- LightGBM
-- Streamlit Deployment
-- Flask Web Application
+- Feature Engineering
+- Compare multiple ML algorithms
+- Deploy using Flask or Streamlit
+- Real-time customer churn prediction
 
 ---
 
-## 👩‍💻 Author
+## 👨‍💻 Author
 
 **Mathan R**
 
-**Bachelor of Computer Applications (BCA)**
+BCA Student | Machine Learning Enthusiast
 
-**Kamaraj College**
-
-**Year of Passing:** 2027
+GitHub: https://github.com/yourusername
 
 ---
 
-## ⭐ Support
+## ⭐ Conclusion
 
-If you found this project useful, please ⭐ the repository and share it with others.
+This project demonstrates how Machine Learning can help banks predict customer churn. By identifying customers who are likely to leave, businesses can take proactive measures to improve customer satisfaction and retention.
